@@ -16,6 +16,9 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 
 # Find dependencies
+find_package(gz-cmake3 REQUIRED)
+find_package(TINYXML2 REQUIRED)
+
 find_package(ament_cmake REQUIRED)
 find_package(ament_index_cpp REQUIRED)
 find_package(controller_manager REQUIRED)
